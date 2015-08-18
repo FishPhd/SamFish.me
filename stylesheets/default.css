@@ -2,3 +2,19 @@
 {
     padding-top: 20px;
 }
+
+.parallax-window
+{
+    height: 800px;
+}
+
+.project-name
+{
+    padding-top: 175px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 15px;
+}
