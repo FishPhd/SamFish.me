@@ -5,12 +5,12 @@
 
 .parallax-window
 {
-    height: 500px;
+    height: 550px;
 }
 
 .project-name
 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 ul {
@@ -21,6 +21,16 @@ ul {
 
 .footer-text
 {
-    padding-left: 50%;
-    padding-top: 150px;
+    padding-top: 100px;
+}
+
+.embed-responsive
+{
+    text-align:center;
+    width:100%;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
 }
