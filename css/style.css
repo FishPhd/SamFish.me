@@ -181,7 +181,34 @@ svg:not(:root) {
   overflow: hidden; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 2px;
+  margin: auto;
+  width: 70%;
+}
+
+.td-bold {
+  font-size: 1.3em;
+  color:white;
+}
+
+.td-header {
+  font-size: 2em;
+  color:white;
+}
+
+.behind-text {
+  position: absolute;
+  z-index: -1;
+  top: -125px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  font-size: 10em;
+}
 
 caption {
   padding-top: 0.75rem;
@@ -471,7 +498,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1200px; } }
 
 .container-fluid {
   width: 100%;
