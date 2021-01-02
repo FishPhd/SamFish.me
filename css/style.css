@@ -196,12 +196,28 @@ table {
 
 
 .td-bold {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color:white;
 }
 
+@media (min-width: 1366px) {
+  .td-bold {
+    font-size: 1.5rem;
+  }
+}
+
+td {
+  font-size: 0.5rem;
+}
+
+@media (min-width: 1366px) {
+  td {
+    font-size: 1.2rem;
+  }
+}
+
 .td-header {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color:white;
 }
 
@@ -211,17 +227,27 @@ table {
   }
 }
 
+body, html{
+  margin:0;
+  padding:0;
+}
+
 .behind-text {
   position: absolute;
   z-index: -1;
-  top: -75px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
   right: 0;
   bottom: 0;
   font-weight: 700 !important;
   color: rgba(255, 255, 255, 0.08);
   text-transform: uppercase;
-  font-size: 10rem;
+  font-size: 6rem;
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;  
 }
 
 @media screen and (min-width: 1366px) {
@@ -236,6 +262,11 @@ table {
     color: rgba(255, 255, 255, 0.08);
     text-transform: uppercase;
     font-size: 10rem;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;  
   }
 }
 
@@ -7804,7 +7835,12 @@ header {
           bottom: 0;
           font-weight: 700 !important;
           font-size: 100px;
-          color: rgba(255, 255, 255, 0.08); }
+          color: rgba(255, 255, 255, 0.08); 
+        
+          -webkit-user-select: none;  /* Chrome all / Safari all */
+          -moz-user-select: none;     /* Firefox all */
+          -ms-user-select: none;      /* IE 10+ */
+          user-select: none;  }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           font-size: 55px;
           color: #fff;
@@ -7963,6 +7999,10 @@ header {
     right: 0;
     bottom: 0;
     font-weight: 700 !important;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;  
     color: rgba(255, 255, 255, 0.08);
     text-transform: uppercase; }
     @media (min-width: 992px) {
