@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -182,9 +183,9 @@ svg:not(:root) {
 
 table {
   border-collapse: collapse;
-  border-spacing: 2px;
-  margin: auto;
-  width: 70%;
+  border-spacing: 3px;
+  margin: 1%;
+  width: 100%;
 }
 
 .td-bold {
@@ -193,8 +194,14 @@ table {
 }
 
 .td-header {
-  font-size: 2em;
+  font-size: 2rem;
   color:white;
+}
+
+@media (min-width: 700px) {
+  .td-header {
+    font-size: 1.5em;
+  }
 }
 
 .behind-text {
