@@ -184,37 +184,59 @@ svg:not(:root) {
 table {
   border-collapse: collapse;
   border-spacing: 3px;
-  margin: 1%;
   width: 100%;
 }
 
+@media (min-width: 1366px){
+  table {
+    margin: auto;
+  }
+}
+
+
+
 .td-bold {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   color:white;
 }
 
 .td-header {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color:white;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1366px) {
   .td-header {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 }
 
 .behind-text {
   position: absolute;
   z-index: -1;
-  top: -125px;
+  top: -75px;
   left: 20px;
   right: 0;
   bottom: 0;
   font-weight: 700 !important;
   color: rgba(255, 255, 255, 0.08);
   text-transform: uppercase;
-  font-size: 10em;
+  font-size: 10rem;
+}
+
+@media screen and (min-width: 1366px) {
+  .behind-text{
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    font-size: 10rem;
+  }
 }
 
 caption {
@@ -513,6 +535,14 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+
+  @media (min-width: 992px) {
+    .container-fluid {
+      width: 80%;
+    } 
+  }
+
 
 .row {
   display: -webkit-box;
